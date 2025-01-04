@@ -1,0 +1,223 @@
+[
+    {
+      "Service Image": "https://via.placeholder.com/150",
+      "Service Title": "Web Development",
+      "Company Name": "TechSolutions",
+      "Website": "https://techsolutions.com",
+      "Description": "Custom web development tailored to your business needs.",
+      "Category": "Web Development",
+      "Price": "$5000",
+      "Added date": "2025-01-01",
+      "userEmail": "user1@example.com"
+    },
+    {
+      "Service Image": "https://via.placeholder.com/150",
+      "Service Title": "Mobile App Development",
+      "Company Name": "AppMaster",
+      "Website": "https://appmaster.com",
+      "Description": "Building user-friendly mobile apps for iOS and Android.",
+      "Category": "Mobile App Development",
+      "Price": "$7000",
+      "Added date": "2025-01-02",
+      "userEmail": "user2@example.com"
+    },
+    {
+      "Service Image": "https://via.placeholder.com/150",
+      "Service Title": "Cloud Hosting",
+      "Company Name": "CloudTech",
+      "Website": "https://cloudtech.com",
+      "Description": "Reliable cloud hosting solutions for businesses of all sizes.",
+      "Category": "Cloud Computing Services",
+      "Price": "$1200",
+      "Added date": "2025-01-03",
+      "userEmail": "user3@example.com"
+    },
+    {
+      "Service Image": "https://via.placeholder.com/150",
+      "Service Title": "SEO Services",
+      "Company Name": "RankUp",
+      "Website": "https://rankup.com",
+      "Description": "Optimize your site for better search engine rankings.",
+      "Category": "Digital Marketing Services",
+      "Price": "$1500",
+      "Added date": "2025-01-04",
+      "userEmail": "user4@example.com"
+    },
+    {
+      "Service Image": "https://via.placeholder.com/150",
+      "Service Title": "Cybersecurity Solutions",
+      "Company Name": "SecureNet",
+      "Website": "https://securenet.com",
+      "Description": "Protect your business with our advanced cybersecurity solutions.",
+      "Category": "Cybersecurity Solutions",
+      "Price": "$4000",
+      "Added date": "2025-01-05",
+      "userEmail": "user5@example.com"
+    },
+    {
+      "Service Image": "https://via.placeholder.com/150",
+      "Service Title": "Database Management",
+      "Company Name": "DataGuard",
+      "Website": "https://dataguard.com",
+      "Description": "Efficient database management and optimization for businesses.",
+      "Category": "Database Management Services",
+      "Price": "$2500",
+      "Added date": "2025-01-06",
+      "userEmail": "user6@example.com"
+    },
+    {
+      "Service Image": "https://via.placeholder.com/150",
+      "Service Title": "E-commerce Solutions",
+      "Company Name": "EcomExperts",
+      "Website": "https://ecomexperts.com",
+      "Description": "Create an online store with our customized e-commerce solutions.",
+      "Category": "E-commerce Solutions",
+      "Price": "$3000",
+      "Added date": "2025-01-07",
+      "userEmail": "user7@example.com"
+    },
+    {
+      "Service Image": "https://via.placeholder.com/150",
+      "Service Title": "Graphic Design",
+      "Company Name": "DesignPro",
+      "Website": "https://designpro.com",
+      "Description": "Creative graphic design services for all your branding needs.",
+      "Category": "Graphic Design",
+      "Price": "$1800",
+      "Added date": "2025-01-08",
+      "userEmail": "user8@example.com"
+    },
+    {
+      "Service Image": "https://via.placeholder.com/150",
+      "Service Title": "IT Consulting",
+      "Company Name": "ConsultPlus",
+      "Website": "https://consultplus.com",
+      "Description": "Expert IT consulting to streamline your business processes.",
+      "Category": "IT Consulting",
+      "Price": "$3500",
+      "Added date": "2025-01-09",
+      "userEmail": "user9@example.com"
+    },
+    {
+      "Service Image": "https://via.placeholder.com/150",
+      "Service Title": "Software Development",
+      "Company Name": "DevMasters",
+      "Website": "https://devmasters.com",
+      "Description": "Custom software solutions to fit your unique business needs.",
+      "Category": "Software Development",
+      "Price": "$8000",
+      "Added date": "2025-01-10",
+      "userEmail": "user10@example.com"
+    },
+    {
+      "Service Image": "https://via.placeholder.com/150",
+      "Service Title": "AI Solutions",
+      "Company Name": "AIBrain",
+      "Website": "https://aibrain.com",
+      "Description": "Transform your business with AI-powered solutions.",
+      "Category": "Artificial Intelligence Solutions",
+      "Price": "$9000",
+      "Added date": "2025-01-11",
+      "userEmail": "user11@example.com"
+    },
+    {
+      "Service Image": "https://via.placeholder.com/150",
+      "Service Title": "Blockchain Development",
+      "Company Name": "BlockTech",
+      "Website": "https://blocktech.com",
+      "Description": "Build decentralized applications and blockchain systems.",
+      "Category": "Blockchain Development",
+      "Price": "$10000",
+      "Added date": "2025-01-12",
+      "userEmail": "user12@example.com"
+    },
+    {
+      "Service Image": "https://via.placeholder.com/150",
+      "Service Title": "Virtualization Services",
+      "Company Name": "VirtuServe",
+      "Website": "https://virtuserve.com",
+      "Description": "Maximize resource efficiency with our virtualization services.",
+      "Category": "Virtualization Services",
+      "Price": "$2000",
+      "Added date": "2025-01-13",
+      "userEmail": "user13@example.com"
+    },
+    {
+      "Service Image": "https://via.placeholder.com/150",
+      "Service Title": "Project Management Services",
+      "Company Name": "ProjectX",
+      "Website": "https://projectx.com",
+      "Description": "Streamline your project management with our expert services.",
+      "Category": "Project Management Services",
+      "Price": "$3500",
+      "Added date": "2025-01-14",
+      "userEmail": "user14@example.com"
+    },
+    {
+      "Service Image": "https://via.placeholder.com/150",
+      "Service Title": "Network Management",
+      "Company Name": "NetSolutions",
+      "Website": "https://netsolutions.com",
+      "Description": "Keep your network running smoothly with our management services.",
+      "Category": "Network Management",
+      "Price": "$2200",
+      "Added date": "2025-01-15",
+      "userEmail": "user15@example.com"
+    },
+    {
+      "Service Image": "https://via.placeholder.com/150",
+      "Service Title": "ERP Solutions",
+      "Company Name": "ERPPro",
+      "Website": "https://erppro.com",
+      "Description": "Integrate and streamline your business operations with ERP systems.",
+      "Category": "Enterprise Resource Planning Solutions",
+      "Price": "$12000",
+      "Added date": "2025-01-16",
+      "userEmail": "user16@example.com"
+    },
+    {
+      "Service Image": "https://via.placeholder.com/150",
+      "Service Title": "Cloud Backup Solutions",
+      "Company Name": "BackupCloud",
+      "Website": "https://backupcloud.com",
+      "Description": "Safeguard your data with our cloud backup solutions.",
+      "Category": "Data Backup and Recovery",
+      "Price": "$1500",
+      "Added date": "2025-01-17",
+      "userEmail": "user17@example.com"
+    },
+    {
+      "Service Image": "https://via.placeholder.com/150",
+      "Service Title": "Custom Software Solutions",
+      "Company Name": "SoftCraft",
+      "Website": "https://softcraft.com",
+      "Description": "Tailored software solutions to address your specific business needs.",
+      "Category": "Custom Software Solutions",
+      "Price": "$6000",
+      "Added date": "2025-01-18",
+      "userEmail": "user18@example.com"
+    },
+    {
+      "Service Image": "https://via.placeholder.com/150",
+      "Service Title": "IT Infrastructure Management",
+      "Company Name": "InfraTech",
+      "Website": "https://infratech.com",
+      "Description": "Manage and optimize your IT infrastructure with our expert services.",
+      "Category": "IT Infrastructure Management",
+      "Price": "$4000",
+      "Added date": "2025-01-19",
+      "userEmail": "user19@example.com"
+    },
+    {
+      "Service Image": "https://via.placeholder.com/150",
+      "Service Title": "UI/UX Design",
+      "Company Name": "DesignLab",
+      "Website": "https://designlab.com",
+      "Description": "Create beautiful and intuitive user interfaces with our design team.",
+      "Category": "UI/UX Design",
+      "Price": "$2200",
+      "Added date": "2025-01-20",
+      "userEmail": "user20@example.com"
+    }
+  ]
+  
