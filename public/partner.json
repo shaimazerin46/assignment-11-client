@@ -1,0 +1,23 @@
+[
+    {
+      "name": "TechSolutions",
+      "logo": "https://image.shutterstock.com/image-vector/laptop-computer-icon-folder-magnifying-260nw-2426609039.jpg",
+      "description": "Leading provider of custom web development services tailored to your business needs."
+    },
+    {
+      "name": "AppMaster",
+      "logo": "https://img.icons8.com/?size=48&id=1Q4TAtcKDACh&format=png",
+      "description": "Building user-friendly mobile apps for iOS and Android with cutting-edge technology."
+    },
+    {
+      "name": "CloudTech",
+      "logo": "https://img.icons8.com/?size=48&id=59023&format=png",
+      "description": "Providing reliable and scalable cloud hosting solutions for businesses of all sizes."
+    },
+    {
+      "name": "RankUp",
+      "logo": "https://img.icons8.com/?size=48&id=fTkqveCX0blI&format=png",
+      "description": "Helping businesses grow with expert SEO services for better search engine rankings."
+    }
+  ]
+  
