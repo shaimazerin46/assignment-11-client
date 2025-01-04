@@ -1,9 +1,10 @@
+import Navbar from "../Components/Navbar";
 
 
 const Layout = () => {
     return (
-        <div>
-            <h3>This is main Layout</h3>
+        <div className="max-w-7xl mx-auto">
+            <Navbar></Navbar>
         </div>
     );
 };
