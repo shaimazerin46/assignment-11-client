@@ -10,4 +10,19 @@
     background-position: center;
     height: 500px;
     width: 100%;
+
 }
+.nav_box{
+    position: relative;
+}
+.nav_box .nav_name{
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 50%;  
+    transform: translateX(-50%); 
+    
+}
+.nav_box:hover .nav_name {
+    display: inline-block;
+  }

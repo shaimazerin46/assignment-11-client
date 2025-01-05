@@ -1,12 +1,38 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import AuthContext from "../Context/AuthContext/AuthContext";
+import { useContext } from "react";
+import Swal from "sweetalert2";
 
 
 const Navbar = () => {
+  const {user,logout} = useContext(AuthContext);
+  const navigate = useNavigate()
+  
     const links = <>
-    <NavLink>Home</NavLink>
+    <NavLink to='/'>Home</NavLink>
     <NavLink>Services</NavLink>
     
     </>
+
+    const handleLogout = ()=>{
+      logout()
+      .then(()=>{
+        Swal.fire({
+          title: "Good job!",
+          text: "Successfully logged out!",
+          icon: "success"
+        });
+        navigate('/login')
+      })
+      .catch(err=>{
+        Swal.fire({
+          icon: "error",
+          
+          text: (err.message),
+          
+        });
+      })
+    }
     return (
         <div>
             <div className="navbar bg-base-100 py-10">
@@ -39,10 +65,20 @@ const Navbar = () => {
      {links}
     </ul>
   </div>
-  <div className="navbar-end flex gap-5">
-   <button className="btn btn-accent text-white">Login</button>
-   <button className="btn btn-accent text-white">Register</button>
-  </div>
+  {
+    user? <div className=" navbar-end flex gap-5">
+      <div className="nav_box">
+          <img src={user.photoURL} alt="" className="w-10 rounded-full h-10"/>
+          <span className="nav_name">{user.displayName}</span>
+      </div>
+      <button onClick={handleLogout} className="btn btn-primary">Logout</button>
+    </div>:
+      <div className="navbar-end flex gap-5">
+          <Link to='/login'> <button className="btn btn-primary text-white">Login</button></Link>
+          <Link to='/register'><button className="btn btn-primary text-white">Register</button></Link>
+      </div>
+  }
+  
 </div>
         </div>
     );
