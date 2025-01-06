@@ -7,6 +7,8 @@ import '../src/index.css'
 import Login from "./Pages/Login.jsx";
 import Register from "./Pages/Register.jsx";
 import AuthProvider from "./Context/AuthContext/AuthProvider.jsx";
+import AddServices from "./Pages/AddServices.jsx";
+import PrivateRoute from "./PrivateRoute/PrivateRoute.jsx";
 
 
 const root = document.getElementById("root");
@@ -19,6 +21,7 @@ ReactDOM.createRoot(root).render(
         <Route index element={<Home></Home>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
+        <Route path='/addServices' element={<PrivateRoute><AddServices></AddServices></PrivateRoute>}></Route>
       </Route>
     </Routes>
   </BrowserRouter>

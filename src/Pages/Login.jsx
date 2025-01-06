@@ -1,13 +1,15 @@
 import Lottie from 'lottie-react';
 import regiLottie from '../../public/lottie/regi.json'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import AuthContext from '../Context/AuthContext/AuthContext';
 import Swal from 'sweetalert2';
 
 const Login = () => {
     const {login,registerWithGoogle} = useContext(AuthContext)
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    const location = useLocation();
+    console.log(location)
     const handleLogin = (e) =>{
         e.preventDefault();
         const form = e.target;
@@ -24,7 +26,7 @@ const Login = () => {
                             text: "You clicked the button!",
                             icon: "success"
                           });
-                    navigate('/')
+                   navigate(location?.state? location.state : '/');
                 })
          .catch(error=>{
                     Swal.fire({
@@ -47,7 +49,7 @@ const Login = () => {
                                 text: "You clicked the button!",
                                 icon: "success"
                               });
-                        navigate('/')
+                        navigate(location?.state? location.state : '/')
                     }
                     )
                     .catch(error=>{

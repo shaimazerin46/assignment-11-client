@@ -24,7 +24,7 @@ const Comments = () => {
                     </div>
                     <div>
                         <p>
-                        "he transition to our new IT infrastructure was seamless, thanks to their well-planned and professional execution. They made a complex process feel simple and stress-free"
+                        "The transition to our new IT infrastructure was seamless, thanks to their well-planned and professional execution. They made a complex process feel simple and stress-free"
                         </p>
                     </div>
                 </Slider>

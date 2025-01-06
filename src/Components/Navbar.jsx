@@ -11,6 +11,9 @@ const Navbar = () => {
     const links = <>
     <NavLink to='/'>Home</NavLink>
     <NavLink>Services</NavLink>
+    {
+      user&&<NavLink to='/addServices'>Add services</NavLink>
+    }
     
     </>
 
