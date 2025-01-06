@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Rating from "react-rating";
 import { useParams } from "react-router-dom";
 
 
@@ -35,6 +36,18 @@ const ServiceDetails = () => {
             </div>
             <div>
                 <h3 className="text-xl font-bold mb-20 text-center">Add review</h3>
+                <div className="flex flex-col space-y-5">
+                    
+                    <textarea
+                        placeholder="write your review"
+                        className="textarea textarea-bordered textarea-sm w-full max-w-xs"></textarea>
+
+                        <Rating
+                        emptySymbol="far fa-star"
+                        fullSymbol="fas fa-star"
+                        ></Rating>
+                        <button className="btn btn-primary w-40">Add review</button>
+                </div>
             </div>
             </div>
         </div>
