@@ -5,10 +5,10 @@
     "companyName": "TechSolutions",
     "website": "https://techsolutions.com",
     "description": "Custom web development tailored to your business needs.",
-    "category": "Web Development",
-    "price": "$5000",
+    "category": "WebDevelopment",
+    "price": 5000,
     "addedDate": "2025-01-01",
-    "userEmail": "user1@example.com"
+    "userEmail": "shaimazerin46@gmail.com"
   },
   {
     "serviceImage": "https://i.ibb.co.com/qnDqZk5/web-design-1953129-640.jpg",
@@ -16,10 +16,10 @@
     "companyName": "AppMaster",
     "website": "https://appmaster.com",
     "description": "Building user-friendly mobile apps for iOS and Android.",
-    "category": "Mobile App Development",
-    "price": "$7000",
+    "category": "MobileAppDevelopment",
+    "price": 7000,
     "addedDate": "2025-01-02",
-    "userEmail": "user2@example.com"
+    "userEmail": "richi@gmail.com"
   },
   {
     "serviceImage": "https://i.ibb.co.com/p3FXYpb/software-development-6523979-640.jpg",
@@ -27,10 +27,10 @@
     "companyName": "CloudTech",
     "website": "https://cloudtech.com",
     "description": "Reliable cloud hosting solutions for businesses of all sizes.",
-    "category": "Cloud Computing Services",
-    "price": "$1200",
+    "category": "CloudHosting",
+    "price": 1200,
     "addedDate": "2025-01-03",
-    "userEmail": "user3@example.com"
+    "userEmail": "shaima@gmail.com"
   },
   {
     "serviceImage": "https://i.ibb.co.com/vsDSPw5/web-3828301-640.jpg",
@@ -38,10 +38,10 @@
     "companyName": "RankUp",
     "website": "https://rankup.com",
     "description": "Optimize your site for better search engine rankings.",
-    "category": "Digital Marketing Services",
-    "price": "$1500",
+    "category": "SEOServices",
+    "price": 1500,
     "addedDate": "2025-01-04",
-    "userEmail": "user4@example.com"
+    "userEmail": "richi@gmail.com"
   },
   {
     "serviceImage": "https://i.ibb.co.com/HBbS8S6/technology-791029-640.jpg",
@@ -49,10 +49,10 @@
     "companyName": "SecureNet",
     "website": "https://securenet.com",
     "description": "Protect your business with our advanced cybersecurity solutions.",
-    "category": "Cybersecurity Solutions",
-    "price": "$4000",
+    "category": "CybersecuritySolutions",
+    "price": 4000,
     "addedDate": "2025-01-05",
-    "userEmail": "user5@example.com"
+    "userEmail": "shaimazerin46@gmail.com"
   },
   {
     "serviceImage": "https://i.ibb.co.com/SQ2wLwF/laptop-2620118-640.jpg",
@@ -60,10 +60,10 @@
     "companyName": "DataGuard",
     "website": "https://dataguard.com",
     "description": "Efficient database management and optimization for businesses.",
-    "category": "Database Management Services",
-    "price": "$2500",
+    "category": "DatabaseManagement",
+    "price": 2500,
     "addedDate": "2025-01-06",
-    "userEmail": "user6@example.com"
+    "userEmail": "shaima@gmail.com"
   },
   {
     "serviceImage": "https://i.ibb.co.com/rGGVPKW/wordpress-923188-640.jpg",
@@ -71,10 +71,10 @@
     "companyName": "EcomExperts",
     "website": "https://ecomexperts.com",
     "description": "Create an online store with our customized e-commerce solutions.",
-    "category": "E-commerce Solutions",
-    "price": "$3000",
+    "category": "EcommerceSolutions",
+    "price": 3000,
     "addedDate": "2025-01-07",
-    "userEmail": "user7@example.com"
+    "userEmail": "richi@gmail.com"
   },
   {
     "serviceImage": "https://i.ibb.co.com/8Kp2wqj/student-849826-640.jpg",
@@ -82,10 +82,10 @@
     "companyName": "DesignPro",
     "website": "https://designpro.com",
     "description": "Creative graphic design services for all your branding needs.",
-    "category": "Graphic Design",
-    "price": "$1800",
+    "category": "GraphicDesign",
+    "price": 1800,
     "addedDate": "2025-01-08",
-    "userEmail": "user8@example.com"
+    "userEmail": "shaima@gmail.com"
   },
   {
     "serviceImage": "https://i.ibb.co.com/Bt5VKVH/programming-1873854-640.webp",
@@ -93,10 +93,10 @@
     "companyName": "ConsultPlus",
     "website": "https://consultplus.com",
     "description": "Expert IT consulting to streamline your business processes.",
-    "category": "IT Consulting",
-    "price": "$3500",
+    "category": "ITConsulting",
+    "price": 3500,
     "addedDate": "2025-01-09",
-    "userEmail": "user9@example.com"
+    "userEmail": "shaimazerin46@gmail.com"
   },
   {
     "serviceImage": "https://i.ibb.co.com/nMrDQSv/laptop-1836990-640.jpg",
@@ -104,10 +104,10 @@
     "companyName": "DevMasters",
     "website": "https://devmasters.com",
     "description": "Custom software solutions to fit your unique business needs.",
-    "category": "Software Development",
-    "price": "$8000",
+    "category": "SoftwareDevelopment",
+    "price": 8000,
     "addedDate": "2025-01-10",
-    "userEmail": "user10@example.com"
+    "userEmail": "richi@gmail.com"
   },
   {
     "serviceImage": "https://i.ibb.co.com/V9dkMCy/computer-767776-640.jpg",
@@ -115,10 +115,10 @@
     "companyName": "AIBrain",
     "website": "https://aibrain.com",
     "description": "Transform your business with AI-powered solutions.",
-    "category": "Artificial Intelligence Solutions",
-    "price": "$9000",
+    "category": "AISolutions",
+    "price": 9000,
     "addedDate": "2025-01-11",
-    "userEmail": "user11@example.com"
+    "userEmail": "shaima@gmail.com"
   },
   {
     "serviceImage": "https://i.ibb.co.com/C8jrXrp/coding-1853305-640.jpg",
@@ -126,10 +126,10 @@
     "companyName": "BlockTech",
     "website": "https://blocktech.com",
     "description": "Build decentralized applications and blockchain systems.",
-    "category": "Blockchain Development",
-    "price": "$10000",
+    "category": "BlockchainDevelopment",
+    "price": 10000,
     "addedDate": "2025-01-12",
-    "userEmail": "user12@example.com"
+    "userEmail": "shaimazerin46@gmail.com"
   },
   {
     "serviceImage": "https://i.ibb.co.com/1npHPVN/pc-1207886-640.jpg",
@@ -137,10 +137,10 @@
     "companyName": "VirtuServe",
     "website": "https://virtuserve.com",
     "description": "Maximize resource efficiency with our virtualization services.",
-    "category": "Virtualization Services",
-    "price": "$2000",
+    "category": "VirtualizationServices",
+    "price": 2000,
     "addedDate": "2025-01-13",
-    "userEmail": "user13@example.com"
+    "userEmail": "richi@gmail.com"
   },
   {
     "serviceImage": "https://i.ibb.co.com/s50TNmk/playstation-1845880-640.jpg",
@@ -148,10 +148,10 @@
     "companyName": "ProjectX",
     "website": "https://projectx.com",
     "description": "Streamline your project management with our expert services.",
-    "category": "Project Management Services",
-    "price": "$3500",
+    "category": "ProjectManagement",
+    "price": 3500,
     "addedDate": "2025-01-14",
-    "userEmail": "user14@example.com"
+    "userEmail": "shaima@gmail.com"
   },
   {
     "serviceImage": "https://i.ibb.co.com/4txcXXz/laptop-593673-640.jpg",
@@ -159,10 +159,10 @@
     "companyName": "NetSolutions",
     "website": "https://netsolutions.com",
     "description": "Keep your network running smoothly with our management services.",
-    "category": "Network Management",
-    "price": "$2200",
+    "category": "NetworkManagement",
+    "price": 2200,
     "addedDate": "2025-01-15",
-    "userEmail": "user15@example.com"
+    "userEmail": "shaimazerin46@gmail.com"
   },
   {
     "serviceImage": "https://i.ibb.co.com/hV2NFf9/woman-3687084-640.jpg",
@@ -170,10 +170,10 @@
     "companyName": "ERPPro",
     "website": "https://erppro.com",
     "description": "Integrate and streamline your business operations with ERP systems.",
-    "category": "Enterprise Resource Planning Solutions",
-    "price": "$12000",
+    "category": "ERPSolutions",
+    "price": 12000,
     "addedDate": "2025-01-16",
-    "userEmail": "user16@example.com"
+    "userEmail": "richi@gmail.com"
   },
   {
     "serviceImage": "https://i.ibb.co.com/6tYLJ56/digital-marketing-1725340-640.jpg",
@@ -181,10 +181,10 @@
     "companyName": "BackupCloud",
     "website": "https://backupcloud.com",
     "description": "Safeguard your data with our cloud backup solutions.",
-    "category": "Data Backup and Recovery",
-    "price": "$1500",
+    "category": "CloudBackup",
+    "price": 1500,
     "addedDate": "2025-01-17",
-    "userEmail": "user17@example.com"
+    "userEmail": "shaima@gmail.com"
   },
   {
     "serviceImage": "https://i.ibb.co.com/vmc2Z1S/robots-7855433-640.webp",
@@ -192,10 +192,10 @@
     "companyName": "SoftCraft",
     "website": "https://softcraft.com",
     "description": "Tailored software solutions to address your specific business needs.",
-    "category": "Custom Software Solutions",
-    "price": "$6000",
+    "category": "CustomSoftware",
+    "price": 6000,
     "addedDate": "2025-01-18",
-    "userEmail": "user18@example.com"
+    "userEmail": "shaimazerin46@gmail.com"
   },
   {
     "serviceImage": "https://i.ibb.co.com/tzMyMR2/technology-7585023-640.jpg",
@@ -203,9 +203,20 @@
     "companyName": "UXMasters",
     "website": "https://uxmasters.com",
     "description": "Create intuitive and user-friendly designs for web and mobile apps.",
-    "category": "UI/UX Design",
-    "price": "$2200",
+    "category": "UIUXDesign",
+    "price": 2200,
     "addedDate": "2025-01-19",
-    "userEmail": "user19@example.com"
+    "userEmail": "richi@gmail.com"
+  },
+  {
+    "serviceImage": "https://i.ibb.co.com/Rk5pyW1/programming-7445971-640.jpg",
+    "serviceTitle": "AI Chatbot Development",
+    "companyName": "ChatBotify",
+    "website": "https://chatbotify.com",
+    "description": "Automate customer interactions with intelligent AI chatbots.",
+    "category": "AIChatbotDevelopment",
+    "price": 5500,
+    "addedDate": "2025-01-20",
+    "userEmail": "shaima@gmail.com"
   }
 ]

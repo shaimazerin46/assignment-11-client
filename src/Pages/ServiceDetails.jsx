@@ -12,13 +12,23 @@ const ServiceDetails = () => {
     const [rating,setRating] = useState(0);
     const textRef = useRef();
     const {user} = useContext(AuthContext);
+    const [reviews,setReviews] = useState([])
     
+    // fetch service details
     useEffect(()=>{
         axios.get(`http://localhost:5000/services/${id}`)
     .then(res=>{
         const data = res.data;
         setData(data)
     })
+    },[])
+
+    // fetch review 
+    useEffect(()=>{
+        axios.get(`http://localhost:5000/reviews/service/${id}`)
+        .then(res=>{
+            setReviews(res.data)
+        })
     },[])
 
     const handleReview = (e)=>{
@@ -33,6 +43,7 @@ const ServiceDetails = () => {
         const postedDate = new Date().toISOString().split('T')[0];
         console.log(rating,text,userInfo,postedDate)
         const review = {
+            service_id: id,
             userInfo,
             text,
             rating,
@@ -62,7 +73,9 @@ const ServiceDetails = () => {
         <div>
             <h3 className="text-3xl text-center font-bold py-20">Service details</h3>
 
-            <div className="grid md:grid-cols-2 gap-5">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            {/* Details */}
             <div className="space-y-5">
             <div className="flex gap-3">
                     <h3 className="text-2xl font-bold">{data?.companyName}</h3>
@@ -77,6 +90,8 @@ const ServiceDetails = () => {
                 <p><span className="font-bold">Price:</span> {data?.price}</p>
 
             </div>
+
+            {/* add rating */}
             <div>
                 <h3 className="text-xl font-bold mb-20 text-center">Add review</h3>
                 <div >
@@ -97,6 +112,29 @@ const ServiceDetails = () => {
                    </form>
                 </div>
             </div>
+
+            {/* display review */}
+            <div>
+                <h3 className="font-bold text-xl text-center mb-20">All reviews</h3>
+                <div>
+                    {
+                        reviews.map((review,idx)=>
+                            <div key={idx} className="mb-10">
+                                <div className="flex gap-3 mb-3">
+                                    <img src={review.userInfo.photo} alt="" className="w-10 h-10 rounded-full"/>
+                                    <span className="flex items-center font-bold">{review.userInfo.name}</span>
+                                </div>
+                                <p className="mb-3">{review.text}</p>
+                                <div className="flex gap-3 text-sm">
+                                    <p className="text-base">Rating: {review.rating}</p>
+                                    <span className="flex items-center">{review.postedDate}</span>
+                                </div>
+                            </div>
+                        )
+                    }
+                </div>
+            </div>
+
             </div>
         </div>
     );

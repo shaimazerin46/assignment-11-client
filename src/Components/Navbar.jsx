@@ -12,7 +12,10 @@ const Navbar = () => {
     <NavLink to='/'>Home</NavLink>
     <NavLink to='/allSearvices'>Services</NavLink>
     {
-      user&&<NavLink to='/addServices'>Add services</NavLink>
+      user&& <div className="space-x-5">
+        <NavLink to='/addServices'>Add services</NavLink> 
+        <NavLink to='/myServices'>My services</NavLink>
+      </div>
     }
     
     </>

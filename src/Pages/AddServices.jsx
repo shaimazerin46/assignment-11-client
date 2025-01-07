@@ -1,10 +1,13 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import AuthContext from '../Context/AuthContext/AuthContext';
 import axios from "axios";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 const AddServices = () => {
     const {user} = useContext(AuthContext);
+    
+    const navigate = useNavigate()
     const handleAddServices = (e)=>{
         e.preventDefault();
         const formdata = new FormData(e.target);
@@ -24,6 +27,7 @@ const AddServices = () => {
                     icon: "success"
                   });
             }
+            navigate ('/myServices')
         })
         .catch(err=>{
             Swal.fire({

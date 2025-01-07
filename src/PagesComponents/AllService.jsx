@@ -15,7 +15,7 @@ const AllService = ({service}) => {
   <div className="card-body flex-grow">
    <div className="flex gap-5">
    <h2 className="card-title">{serviceTitle}</h2>
-   <span className="p-1 text-sm text-center border-[1px] border-green-500 bg-green-200 rounded-3xl">{category}</span>
+   <span className="flex items-center py-1 px-1 text-sm text-center border-[1px] border-green-500 bg-green-200 rounded-3xl">{category}</span>
    </div>
     <p>{description}</p>
     <p>Price: {price}</p>
