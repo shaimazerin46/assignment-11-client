@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import AuthContext from '../Context/AuthContext/AuthContext';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet-async';
 
 const Login = () => {
     const {login,registerWithGoogle} = useContext(AuthContext)
@@ -63,6 +64,9 @@ const Login = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>Login</title>
+            </Helmet>
             <h3 className='text-3xl text-center font-bold'>Login</h3>
             <div className="hero min-h-screen">
                 <div className="hero-content flex-col lg:flex-row-reverse">

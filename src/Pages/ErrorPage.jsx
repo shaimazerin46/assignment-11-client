@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
 
 
@@ -13,6 +14,9 @@ const ErrorPage = () => {
   };
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+          <Helmet>
+            <title>Error</title>
+          </Helmet>
       
       <img className="w-20" src="https://img.icons8.com/?size=48&id=80923&format=png" alt=""/>
       <h2 className="mt-4 text-3xl font-semibold text-red-500">

@@ -3,6 +3,7 @@ import AuthContext from "../Context/AuthContext/AuthContext";
 import axios from "axios";
 import Rating from "react-rating";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 
 const MyReview = () => {
@@ -98,6 +99,9 @@ const MyReview = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>My Reviews</title>
+            </Helmet>
             <h3 className="text-center text-3xl font-bold py-20">My Review {reviews.length}</h3>
             <div>
                 {

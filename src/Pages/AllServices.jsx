@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import AllService from "../PagesComponents/AllService";
+import { Helmet } from "react-helmet-async";
 
 
 const AllServices = () => {
@@ -11,6 +12,9 @@ const AllServices = () => {
     },[])
     return (
         <div>
+            <Helmet>
+                <title>Services</title>
+            </Helmet>
             <h3 className="text-center text-3xl font-bold py-20">All of our services {services.length}</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-20">
                 {

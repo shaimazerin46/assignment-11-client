@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import AuthContext from '../Context/AuthContext/AuthContext';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet-async';
 
 
 const Register = () => {
@@ -78,6 +79,9 @@ const Register = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>Register</title>
+            </Helmet>
             <h3 className='text-3xl text-center font-bold'>Register</h3>
             <div className="hero min-h-screen">
                 <div className="hero-content flex-col lg:flex-row-reverse">

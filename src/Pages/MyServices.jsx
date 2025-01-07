@@ -3,6 +3,7 @@ import AuthContext from "../Context/AuthContext/AuthContext";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -100,6 +101,9 @@ const MyServices = () => {
     });
     return (
         <div>
+          <Helmet>
+            <title>My Services</title>
+          </Helmet>
             <h3 className="text-center text-3xl font-bold py-20">My services: {services.length}</h3>
 
             <div className="text-center mb-5">

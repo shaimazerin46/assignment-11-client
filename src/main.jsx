@@ -14,13 +14,15 @@ import ServiceDetails from "./Pages/ServiceDetails.jsx";
 import MyServices from "./Pages/MyServices.jsx";
 import MyReview from "./Pages/MyReview.jsx";
 import ErrorPage from "./Pages/ErrorPage.jsx";
+import { HelmetProvider } from "react-helmet-async";
 
 
 const root = document.getElementById("root");
 
 ReactDOM.createRoot(root).render(
   <AuthProvider>
-    <BrowserRouter>
+   <HelmetProvider>
+   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Layout></Layout>}>
         <Route index element={<Home></Home>}></Route>
@@ -35,5 +37,6 @@ ReactDOM.createRoot(root).render(
       <Route path="*" element={<ErrorPage></ErrorPage>}></Route>
     </Routes>
   </BrowserRouter>
+   </HelmetProvider>
   </AuthProvider>
 );

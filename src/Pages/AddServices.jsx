@@ -3,6 +3,7 @@ import AuthContext from '../Context/AuthContext/AuthContext';
 import axios from "axios";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const AddServices = () => {
     const {user} = useContext(AuthContext);
@@ -41,6 +42,9 @@ const AddServices = () => {
 
     return (
         <div>
+          <Helmet>
+            <title>Add Service</title>
+          </Helmet>
             <h3 className="py-20 text-center font-bold text-3xl">Add services</h3>
             <div>
             <div className="mb-20 card mx-auto w-full max-w-sm shrink-0 shadow-2xl">

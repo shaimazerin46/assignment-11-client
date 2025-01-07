@@ -4,6 +4,7 @@ import Rating from "react-rating";
 import { useParams } from "react-router-dom";
 import AuthContext from "../Context/AuthContext/AuthContext";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 
 const ServiceDetails = () => {
@@ -82,6 +83,11 @@ const ServiceDetails = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>
+                    Details
+                </title>
+            </Helmet>
             <h3 className="text-3xl text-center font-bold py-20">Service details</h3>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
