@@ -13,6 +13,7 @@ import AllServices from "./Pages/AllServices.jsx";
 import ServiceDetails from "./Pages/ServiceDetails.jsx";
 import MyServices from "./Pages/MyServices.jsx";
 import MyReview from "./Pages/MyReview.jsx";
+import ErrorPage from "./Pages/ErrorPage.jsx";
 
 
 const root = document.getElementById("root");
@@ -31,6 +32,7 @@ ReactDOM.createRoot(root).render(
         <Route path="/myServices" element={<PrivateRoute><MyServices></MyServices></PrivateRoute>}></Route>
         <Route path="/myReview" element={<PrivateRoute><MyReview></MyReview></PrivateRoute>}></Route>
       </Route>
+      <Route path="*" element={<ErrorPage></ErrorPage>}></Route>
     </Routes>
   </BrowserRouter>
   </AuthProvider>

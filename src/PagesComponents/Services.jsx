@@ -6,7 +6,7 @@ import Service from "./Service";
 const Services = () => {
     const [services,setServices] = useState([])
     useEffect(()=>{
-        axios.get('http://localhost:5000/featuredServices')
+        axios.get('https://services-review-server-livid.vercel.app/featuredServices')
         .then(res=>{
             setServices(res.data)
         })

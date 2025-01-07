@@ -6,7 +6,7 @@ import AllService from "../PagesComponents/AllService";
 const AllServices = () => {
     const [services,setServices] = useState([]);
     useEffect(()=>{
-        axios.get('http://localhost:5000/services')
+        axios.get('https://services-review-server-livid.vercel.app/services')
         .then(res=>setServices(res.data))
     },[])
     return (

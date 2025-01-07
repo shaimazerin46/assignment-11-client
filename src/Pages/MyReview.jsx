@@ -14,7 +14,7 @@ const MyReview = () => {
     const [isModalOpen,setIsModalOpen] = useState(false)
     useEffect(()=>{
         if(user.email){
-            axios.get(`http://localhost:5000/reviews?email=${user.email}`)
+            axios.get(`https://services-review-server-livid.vercel.app/reviews?email=${user.email}`)
             .then(res=>{
                 setReviews(res.data)
             })
@@ -35,7 +35,7 @@ const MyReview = () => {
         e.preventDefault();
         const text = textRef.current.value
         const updatedData = {text,rating};
-        axios.put(`http://localhost:5000/reviews/${id}`,updatedData)
+        axios.put(`https://services-review-server-livid.vercel.app/reviews/${id}`,updatedData)
         .then(res=>
         {
             console.log(res.data);
@@ -75,7 +75,7 @@ const MyReview = () => {
          
           .then((result) => {
             if (result.isConfirmed) {
-                axios.delete(`http://localhost:5000/reviews/${id}`)
+                axios.delete(`https://services-review-server-livid.vercel.app/reviews/${id}`)
                 .then(res=>{
                   console.log(res.data)
                   if(res.data.deletedCount){

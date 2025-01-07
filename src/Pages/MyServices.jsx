@@ -16,7 +16,7 @@ const MyServices = () => {
 
     useEffect(() => {
         if (user?.email) {
-            axios.get(`http://localhost:5000/services?email=${user.email}`)
+            axios.get(`https://services-review-server-livid.vercel.app/services?email=${user.email}`)
                 .then(res => {
                     setServices(res.data)
                 })
@@ -28,7 +28,7 @@ const MyServices = () => {
     const handleUpdate = (id) =>{
         setPrevData({});
         setIsModalOpen(true);
-        axios.get(`http://localhost:5000/services/${id}`)
+        axios.get(`https://services-review-server-livid.vercel.app/services/${id}`)
         .then(res=>setPrevData(res.data));
         
         
@@ -42,7 +42,7 @@ const MyServices = () => {
         const formdata = new FormData(e.target);
         const data = Object.fromEntries(formdata.entries());
         
-        axios.put(`http://localhost:5000/services/${id}`,data)
+        axios.put(`https://services-review-server-livid.vercel.app/services/${id}`,data)
         .then(res=>
             {
                 console.log(res.data)
@@ -68,7 +68,7 @@ const MyServices = () => {
     }
 
     const handleDelete = (id) =>{
-       axios.delete(`http://localhost:5000/services/${id}`)
+       axios.delete(`https://services-review-server-livid.vercel.app/services/${id}`)
        .then(res=>{
         console.log(res.data);
         if(res.data.deletedCount){

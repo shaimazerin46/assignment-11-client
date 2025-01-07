@@ -17,7 +17,7 @@ const AddServices = () => {
         const userEmail = user.email
         data.userEmail = userEmail;
         console.log(data)
-        axios.post('http://localhost:5000/services',data)
+        axios.post('https://services-review-server-livid.vercel.app/services',data)
         .then(res=>{
             console.log(res.data)
             if(res.data.insertedId){
@@ -43,7 +43,7 @@ const AddServices = () => {
         <div>
             <h3 className="py-20 text-center font-bold text-3xl">Add services</h3>
             <div>
-            <div className="card mx-auto w-full max-w-sm shrink-0 shadow-2xl">
+            <div className="mb-20 card mx-auto w-full max-w-sm shrink-0 shadow-2xl">
       <form className="card-body" onSubmit={handleAddServices}>
         {/* Image */}
         <div className="form-control">

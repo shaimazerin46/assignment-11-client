@@ -6,7 +6,8 @@ import Swal from "sweetalert2";
 
 const Navbar = () => {
   const {user,logout} = useContext(AuthContext);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+ 
   
     const links = <>
     <NavLink to='/'>Home</NavLink>

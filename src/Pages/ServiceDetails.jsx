@@ -17,7 +17,7 @@ const ServiceDetails = () => {
     
     // fetch service details
     useEffect(()=>{
-        axios.get(`http://localhost:5000/services/${id}`)
+        axios.get(`https://services-review-server-livid.vercel.app/services/${id}`)
     .then(res=>{
         const data = res.data;
         setData(data)
@@ -26,7 +26,7 @@ const ServiceDetails = () => {
 
     // fetch review 
     useEffect(()=>{
-        axios.get(`http://localhost:5000/reviews/service/${id}`)
+        axios.get(`https://services-review-server-livid.vercel.app/reviews/service/${id}`)
         .then(res=>{
             setReviews(res.data)
         })
@@ -52,7 +52,7 @@ const ServiceDetails = () => {
             postedDate
 
         }
-        axios.post('http://localhost:5000/reviews',review)
+        axios.post('https://services-review-server-livid.vercel.app/reviews',review)
         .then(res=>{
             console.log(res.data)
             if(res.data.insertedId){
