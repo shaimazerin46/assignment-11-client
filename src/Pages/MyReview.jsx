@@ -2,6 +2,7 @@ import { useContext, useEffect, useRef, useState } from "react";
 import AuthContext from "../Context/AuthContext/AuthContext";
 import axios from "axios";
 import Rating from "react-rating";
+import Swal from "sweetalert2";
 
 
 const MyReview = () => {
@@ -30,11 +31,70 @@ const MyReview = () => {
     const handleModal = ()=>{
         setIsModalOpen(false)
     }
-    const handleUpdateReviewForm=(e)=>{
+    const handleUpdateReviewForm=(e,id)=>{
         e.preventDefault();
         const text = textRef.current.value
-        
+        const updatedData = {text,rating};
+        axios.put(`http://localhost:5000/reviews/${id}`,updatedData)
+        .then(res=>
+        {
+            console.log(res.data);
+            if(res.data.modifiedCount){
+                Swal.fire({
+                    title: "Good job!",
+                    text: "Successfully updated!",
+                    icon: "success"
+                  });
+                  setReviews(prevReviews => 
+                    prevReviews.map(review => 
+                        review._id === id ? { ...review, text, rating } : review 
+                    )
+                );
+                  setIsModalOpen(false)
+            }
+        }
+        )
+        .catch(err=>{
+            Swal.fire({
+                icon: "error",
+                text: (err.message),
+              });
+        })
 
+    }
+    const handleDelete = (id)=>{
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+          })
+         
+          .then((result) => {
+            if (result.isConfirmed) {
+                axios.delete(`http://localhost:5000/reviews/${id}`)
+                .then(res=>{
+                  console.log(res.data)
+                  if(res.data.deletedCount){
+                    setReviews((prevReviews) =>
+                        prevReviews.filter((review) => review._id !== id)
+                    );
+                    Swal.fire({
+                        title: "Deleted!",
+                        text: "Your file has been deleted.",
+                        icon: "success"
+                      });
+                  }
+              })
+            
+             
+            }
+          });
+        
+        
     }
     return (
         <div>
@@ -50,7 +110,7 @@ const MyReview = () => {
                         </div>
                         <div className="flex gap-3">
                             <button onClick={()=>handleUpdate(review._id)} className="btn btn-outline">Update</button>
-                            <button className="btn btn-error">Delete</button>
+                            <button onClick={()=>handleDelete(review._id)} className="btn btn-error">Delete</button>
                         </div>
                         </div>
                     )
