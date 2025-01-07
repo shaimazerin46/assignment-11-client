@@ -15,6 +15,7 @@ const Navbar = () => {
       user&& <div className="space-x-5">
         <NavLink to='/addServices'>Add services</NavLink> 
         <NavLink to='/myServices'>My services</NavLink>
+        <NavLink to='/myReview'>My review</NavLink>
       </div>
     }
     

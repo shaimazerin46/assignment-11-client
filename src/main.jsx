@@ -12,6 +12,7 @@ import PrivateRoute from "./PrivateRoute/PrivateRoute.jsx";
 import AllServices from "./Pages/AllServices.jsx";
 import ServiceDetails from "./Pages/ServiceDetails.jsx";
 import MyServices from "./Pages/MyServices.jsx";
+import MyReview from "./Pages/MyReview.jsx";
 
 
 const root = document.getElementById("root");
@@ -27,7 +28,8 @@ ReactDOM.createRoot(root).render(
         <Route path='/addServices' element={<PrivateRoute><AddServices></AddServices></PrivateRoute>}></Route>
         <Route path="/allSearvices" element={<AllServices></AllServices>}></Route>
         <Route path='/details/:id' element={<ServiceDetails></ServiceDetails>}></Route>
-        <Route path="/myServices" element={<MyServices></MyServices>}></Route>
+        <Route path="/myServices" element={<PrivateRoute><MyServices></MyServices></PrivateRoute>}></Route>
+        <Route path="/myReview" element={<PrivateRoute><MyReview></MyReview></PrivateRoute>}></Route>
       </Route>
     </Routes>
   </BrowserRouter>

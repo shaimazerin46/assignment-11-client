@@ -13,6 +13,7 @@ const ServiceDetails = () => {
     const textRef = useRef();
     const {user} = useContext(AuthContext);
     const [reviews,setReviews] = useState([])
+    const serviceTitle =  data?.serviceTitle;
     
     // fetch service details
     useEffect(()=>{
@@ -44,6 +45,7 @@ const ServiceDetails = () => {
         console.log(rating,text,userInfo,postedDate)
         const review = {
             service_id: id,
+            serviceTitle: serviceTitle,
             userInfo,
             text,
             rating,
@@ -59,6 +61,15 @@ const ServiceDetails = () => {
                     text: "Thank you for your review",
                     icon: "success"
                   });
+
+                  setReviews((prevReviews) => [
+                    ...prevReviews,
+                    { ...review, _id: res.data.insertedId }
+                ]);
+
+                
+                textRef.current.value = "";
+                setRating(0);
             }
         })
         .catch(err=>{
