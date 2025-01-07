@@ -10,7 +10,8 @@ const MyServices = () => {
     const [services, setServices] = useState([]);
     const { user} = useContext(AuthContext);
     const [prevData,setPrevData] = useState({})
-    const [isModalOpen,setIsModalOpen] = useState(false)
+    const [isModalOpen,setIsModalOpen] = useState(false);
+    const [search,setSearch] = useState("")
     
 
     useEffect(() => {
@@ -52,21 +53,64 @@ const MyServices = () => {
                         icon: "success"
                       });
                 }
-                setIsModalOpen(false)
+                
+                const updatedData = services.map(service=>service._id===id? {...service,...data} : service);
+                setServices(updatedData)
+                setIsModalOpen(false);
             }
         )
         .catch(err=>{
             Swal.fire({
                 icon: "error",
-                
                 text: (err.message),
-                
               });
         })
     }
+
+    const handleDelete = (id) =>{
+       axios.delete(`http://localhost:5000/services/${id}`)
+       .then(res=>{
+        console.log(res.data);
+        if(res.data.deletedCount){
+            Swal.fire({
+                title: "Good job!",
+                text: "Successfully deleted",
+                icon: "success"
+              });
+            
+        }
+        const filteredData = services.filter(service=>service._id!==id)
+        setServices(filteredData)
+       })
+       .catch(err=>{
+        console.log(err.message);
+        Swal.fire({
+            icon: "error",
+            text: (err.message),
+            footer: '<a href="#">Why do I have this issue?</a>'
+          });
+       })
+
+    }
+    const filteredServices = services.filter(service => {
+        return (
+            service.serviceTitle.toLowerCase().includes(search.toLowerCase()) ||
+            service.companyName.toLowerCase().includes(search.toLowerCase())
+        );
+    });
     return (
         <div>
             <h3 className="text-center text-3xl font-bold py-20">My services: {services.length}</h3>
+
+            <div className="text-center mb-5">
+                <input
+                    type="text"
+                    placeholder="Search by service title or company"
+                    className="input input-bordered w-80"
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)} 
+                />
+            </div>
             <div>
              <div className="overflow-x-auto mb-20">
                             <table className="table">
@@ -85,7 +129,7 @@ const MyServices = () => {
                                     
 
                                     {
-                                         services.map((service,idx) => 
+                                         filteredServices.map((service,idx) => 
                                     <tr key={service._id}>
                                          <th>{idx+1}</th>
                                          <td>{service?.serviceTitle}</td>
@@ -96,7 +140,7 @@ const MyServices = () => {
                                            
                                             <button onClick={()=>handleUpdate(service._id)} className="btn btn-outline">Update</button>
                                             
-                                            <button>
+                                            <button onClick={()=>handleDelete(service._id)}>
                                                 <img src="https://img.icons8.com/?size=64&id=PN84GwwZXtfH&format=png" alt="" className="w-10"/>
                                             </button>
                                          </td>
