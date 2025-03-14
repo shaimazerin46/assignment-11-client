@@ -6,11 +6,11 @@ const AllService = ({service}) => {
     return (
         <div>
             <div className="card shadow-xl h-full flex flex-col">
-  <figure className="px-10 pt-10">
+  <figure className="">
     <img
       src={serviceImage}
       alt="service image"
-      className="rounded-xl h-[200px] object-cover" />
+      className="rounded-xl h-[200px] w-full object-cover" />
   </figure>
   <div className="card-body flex-grow">
    <div className="flex gap-5">

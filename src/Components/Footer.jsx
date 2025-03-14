@@ -5,7 +5,7 @@ const Footer = () => {
         <div>
             <footer className=" bg-base-200 py-10">
 
- <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-7xl mx-auto gap-3 md:gap-0">
+ <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-7xl mx-auto gap-3 md:gap-0 md:px-3 px-3 lg:px-0">
  <aside className="">
   <a className="text-xl font-bold">ServiceCritic</a>
   <p className="pt-2">&copy; 2025 ServiceCritic. All rights reserved.</p>
