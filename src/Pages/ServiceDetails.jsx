@@ -88,12 +88,12 @@ const ServiceDetails = () => {
                     Details
                 </title>
             </Helmet>
-            <h3 className="text-3xl text-center font-bold py-20">Service details</h3>
+            <h3 className="text-3xl text-center font-bold py-5 md:py-20">Service details</h3>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 pb-10">
 
             {/* Details */}
-            <div className="space-y-5">
+            <div className="space-y-5 mx-auto">
             <div className="flex gap-3">
                     <h3 className="text-2xl font-bold">{data?.companyName}</h3>
                     <span className="p-1 text-sm text-center border-[1px] border-green-500 bg-green-200 rounded-3xl">{data?.category}</span>
@@ -110,8 +110,8 @@ const ServiceDetails = () => {
 
             {/* add rating */}
             <div>
-                <h3 className="text-xl font-bold mb-20 text-center">Add review</h3>
-                <div >
+                <h3 className="text-xl font-bold mb-10 md:mb-20 text-center">Add review</h3>
+                <div className="w-1/2 md:w-full mx-auto">
                     
                    <form onSubmit={handleReview} className="flex flex-col space-y-5">
                             <textarea
@@ -132,8 +132,8 @@ const ServiceDetails = () => {
 
             {/* display review */}
             <div>
-                <h3 className="font-bold text-xl text-center mb-20">All reviews</h3>
-                <div>
+                <h3 className="font-bold text-xl text-center pb-10 md:mb-20">All reviews</h3>
+                <div className="mx-auto w-1/2 md:w-full">
                     {
                         reviews.map((review,idx)=>
                             <div key={idx} className="mb-10">

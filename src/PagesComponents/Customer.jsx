@@ -5,8 +5,8 @@ const Customer = () => {
     return (
         <div>
             <h3 className="text-center text-3xl font-bold">Why Our Customers Choose Us?</h3>
-            <div className="mt-20 grid md:grid-cols-3 gap-20">
-                <div>
+            <div className=" mt-10 md:mt-20 grid md:grid-cols-3 gap-5 md:gap-20 p-3 md:p-0">
+                <div className=''>
                     <h3 className="font-bold text-2xl text-right">We Are Experts</h3>
                     <p className="my-10 text-sm text-right">and dominate the industry in scale and scope with an adaptable, extensive network that consistently delivers exceptional results.</p>
                     <h3 className="font-bold text-2xl text-right">We Are Committed</h3>
