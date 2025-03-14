@@ -45,9 +45,9 @@ const AddServices = () => {
           <Helmet>
             <title>Add Service</title>
           </Helmet>
-            <h3 className="py-20 text-center font-bold text-3xl">Add services</h3>
+            <h3 className="md:py-20 py-5 text-center font-bold text-3xl">Add services</h3>
             <div>
-            <div className="mb-20 card mx-auto w-full max-w-sm shrink-0 shadow-2xl">
+            <div className="md:mb-20 mb-5 card mx-auto w-full max-w-sm shrink-0 shadow-2xl">
       <form className="card-body" onSubmit={handleAddServices}>
         {/* Image */}
         <div className="form-control">

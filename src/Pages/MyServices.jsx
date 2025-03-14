@@ -104,7 +104,7 @@ const MyServices = () => {
           <Helmet>
             <title>My Services</title>
           </Helmet>
-            <h3 className="text-center text-3xl font-bold py-20">My services: {services.length}</h3>
+            <h3 className="text-center text-3xl font-bold md:py-20 py-5">My services: {services.length}</h3>
 
             <div className="text-center mb-5">
                 <input
@@ -116,7 +116,7 @@ const MyServices = () => {
                 />
             </div>
             <div>
-             <div className="overflow-x-auto mb-20">
+             <div className="overflow-x-auto md:mb-20 mb-5">
                             <table className="table">
                                 {/* head */}
                                 <thead>

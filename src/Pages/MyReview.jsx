@@ -102,11 +102,11 @@ const MyReview = () => {
             <Helmet>
                 <title>My Reviews</title>
             </Helmet>
-            <h3 className="text-center text-3xl font-bold py-20">My Review {reviews.length}</h3>
+            <h3 className="text-center text-3xl font-bold md:py-20 py-5">My Review {reviews.length}</h3>
             <div>
                 {
                     reviews.map(review=>
-                        <div key={review._id} className="w-96 mx-auto mb-10 card bg-base-100 shadow-xl p-5 space-y-3">
+                        <div key={review._id} className="w-96 mx-auto md:mb-20 mb-5 card bg-base-100 shadow-xl p-5 space-y-3">
                         <div className="space-y-3">
                             <h2 className="card-title">{review.serviceTitle}</h2>
                             <p>{review.text}</p>

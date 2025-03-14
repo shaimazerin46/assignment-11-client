@@ -12,9 +12,9 @@ const Partners = () => {
         })
     },[])
     return (
-        <div className="md:pb-20 pb-5"> 
-            <h3 className="text-3xl font-bold text-center ">Meet Our Partners</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-8 md:mt-20 mt-10">
+        <div className=""> 
+            <h3 className="text-3xl font-bold text-center md:py-20 py-5">Meet Our Partners</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-8">
                 {
                   partners.map((partner,idx)=><Partner key={idx} partner={partner}></Partner>)  
                 }

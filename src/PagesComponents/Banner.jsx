@@ -15,7 +15,7 @@ const Banner = () => {
       };
     return (
         <div>
-            <Slider {...settings} className="p-3 md:p-0">
+            <Slider {...settings} className="px-3 md:p-0">
                 <div >
                    <img className="rounded-2xl w-full object-cover h-[400px]" src="https://cdn.pixabay.com/photo/2024/02/22/03/05/information-8589031_640.png" alt=""/>
                 </div>
