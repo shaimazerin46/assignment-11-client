@@ -3,14 +3,17 @@
 const Footer = () => {
     return (
         <div>
-            <footer className="flex bg-base-200 py-10">
-  <aside className="mx-auto">
+            <footer className=" bg-base-200 py-10">
+
+ <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-7xl mx-auto gap-3 md:gap-0">
+ <aside className="">
   <a className="text-xl font-bold">ServiceCritic</a>
   <p className="pt-2">&copy; 2025 ServiceCritic. All rights reserved.</p>
   </aside>
-  <nav className="mx-auto ">
+
+  <nav className="">
     <h6 className="text-xl font-bold pb-2">Services</h6>
-    <div className="gap-2 flex">
+    <div className="gap-2 flex flex-wrap">
     <a className="link link-hover">Branding</a>
     <a className="link link-hover">Design</a>
     <a className="link link-hover">Marketing</a>
@@ -18,7 +21,8 @@ const Footer = () => {
     </div>
     
   </nav>
-  <nav className="mx-auto ">
+
+  <nav className="md:mx-auto ">
     <h6 className="text-xl font-bold pb-2">Social</h6>
     <div className="flex">
     <a href="https://www.facebook.com/shaimazerinrichi" target="_blank">
@@ -33,12 +37,15 @@ const Footer = () => {
     </div>
 
   </nav>
-  <nav className="mx-auto">
+
+
+  <nav className="">
     <h6 className="text-xl font-bold pb-2">Legal</h6>
     <a className="link link-hover">Terms of use</a>
     <a className="link link-hover">Privacy policy</a>
     <a className="link link-hover">Cookie policy</a>
   </nav>
+ </div>
 </footer>
         </div>
     );
