@@ -8,11 +8,11 @@ const Service = ({service}) => {
     return (
         <div>
            <div className="card bg-base-100 shadow-xl flex flex-col h-full">
-  <figure className="px-10 pt-10">
+  <figure className="">
     <img
       src={serviceImage}
       alt="IT services"
-      className="rounded-xl h-[200px] object-cover" />
+      className="rounded-xl h-[200px] w-full object-cover" />
   </figure>
   <div className="card-body flex-grow">
     <h2 className="card-title">{serviceTitle}</h2>
