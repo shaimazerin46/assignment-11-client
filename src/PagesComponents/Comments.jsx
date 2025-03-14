@@ -14,8 +14,8 @@ const Comments = () => {
     return (
         <div>
             <h3 className="text-center text-3xl font-bold py-5 md:py-20">Our Clients Say</h3>
-            <div className="background rounded-3xl mb-10 md:mb-20">
-                <Slider className="px-3 md:px-0 w-[700px] h-[300px] mx-auto pt-[150px] font-bold text-xl text-white" {...settings}>
+            <div className="background rounded-3xl mb-10 md:mb-20 flex items-center">
+                <Slider className=" w-[500px] text-justify lg:w-[700px]  mx-auto  font-bold text-xl text-white" {...settings}>
                     <div>
                         <p>"The IT team provided exceptional support and resolved all our technical issues efficiently. Their expertise ensured minimal downtime, and they were always just a call away for assistance. Highly recommend their services!"</p>
                     </div>
